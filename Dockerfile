@@ -4,5 +4,5 @@
 FROM jboss/wildfly:latest
 LABEL MAINTAINER="iColombo"
 RUN /opt/jboss/wildfly/bin/add-user.sh admin Admin.CS1021
-ADD /target/hello-world.war /opt/jboss/wildfly/standalone/deployments/
+ADD /target/hello-world-jsf-1.0.war /opt/jboss/wildfly/standalone/deployments/
 CMD ["/bin/sh"]
